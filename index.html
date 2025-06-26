@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya Gundelli | Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Playfair+Display:wght@700&family=Caveat:wght@400&family=Montserrat:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display:wght@700&family=Inter:wght@300;600&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+  <nav>
+    <div class="nav-buttons">
+      <button onclick="window.location.href='#home'">Home</button>
+      <button data-target="#about">About Me</button>
+      <button data-target="#profile">Profile</button>
+      <button data-target="#projects">Projects</button>
+      <button data-target="#contact">Contact</button>
+
+    </div>
+  </nav>
+  <!-- HOME PAGE -->
+  <section id="home">
+    <div class="home-wrapper">
+      <div class="home-text" data-aos="fade-up">
+        <h1>
+          <span class="greeting">hi! Iam </span><br>
+          <span class="name">Divya Gundelli</span>
+        </h1>
+        <p>Aspiring Data Analyst & Frontend Developer</p>
+      </div>
+      <img src="images/divyasri.jpg" alt="Divya Gundelli">
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h1 class="section-title">About Me</h1>
+        <p class="intro-subheading">My Introduction</p>
+        <!-- skills -->
+        <h2 class="skills-heading">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-box" onclick="revealSkills(this)">
+            <strong class="skill-title">Programming Languages:</strong>
+            <ul class="skill-list">
+              <li class="skill-item">Java</li>
+              <li class="skill-item">C</li>
+              <li class="skill-item">Python</li>
+            </ul>
+          </div>
+          <div class="skill-box" onclick="revealSkills(this)">
+            <strong class="skill-title">Web Technologies:</strong>
+            <ul class="skill-list">
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">React.js (Basic)</li>
+            </ul>
+          </div>
+          <div class="skill-box" onclick="revealSkills(this)">
+            <strong class="skill-title">Data Visualization and Analytics:</strong>
+            <ul class="skill-list">
+              <li class="skill-item">Power BI</li>
+              <li class="skill-item">Tableau</li>
+            </ul>
+          </div>
+          <div class="skill-box" onclick="revealSkills(this)">
+            <strong class="skill-title">Databases:</strong>
+            <ul class="skill-list">
+              <li class="skill-item">SQL (Basic)</li>
+              <li class="skill-item">MongoDB</li>
+            </ul>
+          </div>
+        </div>
+        <p class="about-description">
+          I am a self-motivated and dedicated Computer Science student with a strong passion for data analysis,
+          visualization, and problem-solving. Over the past two years, I have proudly served as the Class
+          Representative, demonstrating strong leadership, communication, and organizational skills. I possess a solid
+          foundation in tools like Power BI, SQL, and Python, and have hands-on experience in building data-driven
+          solutions that uncover actionable insights. I am always eager to learn and contribute meaningfully, with a
+          goal to support data-driven decision-making and predictive modeling in dynamic environments.
+        </p>
+        <!-- resume -->
+        <a href="pdfs/22211a6743_Resume1.pdf" class="button" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- profile -->
+  <section id="profile">
+    <div class="content profile-section">
+      <h2 class="section-title">Profile</h2>
+      <p class="intro-subheading">My Journey and Credentials</p>
+
+      <div class="tab-container">
+        <button class="tab-button active" data-tab="education">Education</button>
+        <button class="tab-button" data-tab="certifications">Certifications</button>
+        <button class="tab-button" data-tab="achievements">Achievements</button>
+      </div>
+
+      <div class="tab-content active" id="education">
+        <div class="education-list">
+          <div class="edu-entry">
+            <div class="edu-label"><strong>B.Tech in Computer Science (Data Science), 2022 – Present</strong></div>
+            <div class="edu-institute">B V Raju Institute of Technology</div>
+            <!-- <div class="edu-duration">2022 – Present</div> -->
+            <div class="edu-score">CPI: 8.69</div>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-label"><strong>Intermediate – MPC, 2020 – 2022</strong></div>
+            <div class="edu-institute">Gurukrupa Junior College</div>
+            <!-- <div class="edu-duration">2020 – 2022</div> -->
+            <div class="edu-score">Percentage: 97.9%</div>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-label"><strong>Metriculation, 2020</strong></div>
+            <div class="edu-institute">Telangana State Model School</div>
+            <!-- <div class="edu-duration">2020</div> -->
+            <div class="edu-score">GPA: 10 / 10</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tab-content" id="certifications">
+        <div class="certificates-grid">
+          <!-- Column 1 -->
+          <div class="cert-column">
+            <div class="certificate-item">
+              <strong>Python</strong><br>
+              <em>Skill Up</em><br>
+              <a href="images/skillup python.jpg" target="_blank" class="view-link">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+              <strong>Power BI</strong><br>
+              <em>Skill Up</em><br>
+              <a href="images/skillup powerbi.jpg" target="_blank" class="view-link">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+              <strong>Citizen Data Science</strong><br>
+              <em>Infosys Springboard</em><br>
+              <a href="pdfs/data science foundation certificate.pdf" target="_blank" class="view-link">View Certificate</a>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="cert-column">
+            <div class="certificate-item">
+              <strong>Soft Skills</strong><br>
+              <em>NPTEL</em><br>
+              <a href="images/softskills.jpg" target="_blank" class="view-link">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+              <strong>English for Competitive Exams</strong><br>
+              <em>NPTEL</em><br>
+              <a href="images/English language for competitive exams.jpg" target="_blank" class="view-link">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tab-content" id="achievements">
+        <div class="achievement-list">
+          <div class="achievement-item">
+            <strong>Won 3rd Prize in Smart India Pre'Hackathon </strong>conducted by
+            <span class="highlighted-text">BVRIT-N</span><br>
+            <a href="images/Hackathon bvrit.jpg" target="_blank" class="view-link">View Certificate</a>
+          </div>
+
+          <div class="achievement-item">
+            <strong> Won 1st Prize in Debug Battle – Promethean 2025</strong>, a college-level coding competition.<br>
+            Showcased strong debugging and logical problem-solving skills.<br>
+            <a href="images/debug battle.jpg" target="_blank" class="view-link">View Certificate</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="content project-section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+      <!-- Course Recommendation -->
+      <div class="project-card">
+        <h3>Course Recommendation System</h3>
+        <p>A machine learning project that recommends courses based on user interests and trends.</p>
+        <img src="images/course recommendation .jpg" alt="Course Recommendation Screenshot">
+        <div class="btn-group">
+          <button class="project-btn left-btn" onclick="openPopup('popup-course')">See More</button>
+          <a href="https://your-course-recommendation-link.com" class="project-btn right-btn">Link</a>
+        </div>
+      </div>
+
+      <!-- PrintEase -->
+      <div class="project-card">
+        <h3>PrintEase: Revolutionizing Print Services</h3>
+        <p>An app designed to ease printing services in colleges, letting students upload and collect documents efficiently.</p>
+        <img src="images/Screenshot (41).png" alt="PrintEase Screenshot">
+        <div class="btn-group">
+          <button class="project-btn left-btn" onclick="openPopup('popup-printease')">See More</button>
+          <a href="https://printeaseuser.web.app" class="project-btn right-btn">Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup for Course Recommendation -->
+  <div id="popup-course" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popup-course')">&times;</span>
+      <h3 class="popup-heading">Course Recommendation System</h3>
+      <!-- <h4 class="project-type">Personal Project</h4> -->
+      <p>A sentiment analysis-based system that helps learners find suitable YouTube courses by analyzing user comments. It scrapes feedback, classifies sentiment, and recommends the best-rated courses based on real opinions.</p>
+      <p><strong class="highlight-heading">Highlights include:</strong></p>
+      <ul>
+        <li> Web scraping and sentiment classification of YouTube course comments.</li>
+        <li> Personalized recommendations with high positive and low negative sentiment scores.</li>
+        <li> Improved decision-making for learners using real-world feedback.</li>
+      </ul>
+      <p><strong class="tools-used">Tools Used:</strong> Python, NLP, BeautifulSoup, Machine Learning, Matplotlib</p>
+      <div class="popup-link-center">
+        <a href="https://your-course-recommendation-link.com" class="project-btn right-btn">Link</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup for PrintEase -->
+  <div id="popup-printease" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popup-printease')">&times;</span>
+      <h3 class="popup-heading">PrintEase</h3>
+      <!-- <h4 class="project-type">Personal Project</h4> -->
+      <p>PrintEase is a web-based platform that simplifies Xerox shop discovery, file upload, and secure online printing. It ensures fast service, payment security, and promotes sustainability by minimizing physical visits.</p>
+      <p><strong class="highlight-heading">Highlights include:</strong></p>
+      <ul>
+        <li> Built with Flutter and Firebase for a seamless cross-platform experience.</li>
+        <li> Integrated Google Maps API for location-based shop discovery.</li>
+        <li> Secure payment via Razorpay and auto file deletion for user privacy.</li>
+      </ul>
+      <p><strong class="tools-used">Tools Used:</strong> Flutter, Firebase, Firestore, Razorpay, Google Maps API</p>
+      <div class="popup-link-center">
+        <a href="https://your-printease-link.com" class="project-btn right-btn">Link</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT FORM -->
+<section id="contact">
+  <div class="content">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="intro-subheading">Let's get in touch!</p>
+    <form action="https://formspree.io/f/mgvkanzl" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Email</button>
+    </form>
+
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+      <p><strong>Contact Info:</strong></p>
+      <p>Email: <a href="mailto:22211a6743@bvrit.ac.in">22211a6743@bvrit.ac.in</a></p>
+      <p>Phone: +91-8125305342</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-gundelli-093245259" target="_blank">Visit Profile</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>Copyright © 2024 Divya Gundelli. All rights reserved.</p>
+</footer>
+
+
+
+  <script src="script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("ASo38piT6kLs8trzb"); // Replace with your Public Key
+</script>
+
+</body>
+
+</html>
